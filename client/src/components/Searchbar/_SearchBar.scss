@@ -1,0 +1,22 @@
+@import '../../variables.scss';
+
+.search-container {
+  .form-control {
+    color: $text-color;
+  }
+
+  .input-group-text {
+    background: $white;
+    box-shadow: none;
+    outline   : none;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  /* styles for browsers larger than 960px; */
+  .search-container {
+    margin-top: 5rem;
+    width     : 60%;
+  }
+}

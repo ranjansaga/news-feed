@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.news-navbar {
+
+  .news-brand-link {
+    color         : $white;
+    font-weight   : 800;
+    font-family   : $roboto;
+    letter-spacing: 2px;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color         : $white;
+      font-weight   : 600;
+      font-family   : $roboto;
+      letter-spacing: 2px;
+      font-size     : 0.8rem;
+    }
+  }
+}
