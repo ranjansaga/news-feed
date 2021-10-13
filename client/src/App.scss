@@ -1,0 +1,32 @@
+@import './components/NewsItem/_NewsItem.scss';
+@import './components/NewsNavigationBar/_NewsNavigationBar.scss';
+@import './components/Searchbar/_SearchBar.scss';
+@import './_variables.scss';
+
+.app-container {
+  margin-top: 2rem;
+
+  .load-more-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+
+    .load-more-button {
+      background: #fff;
+      border    : 1px solid #bdbdbd;
+      padding   : 0.5rem 3rem;
+      margin    : 2.5rem;
+      box-shadow: none;
+      outline   : none;
+      color     : $text-color;
+      letter-spacing: 1px;
+    }
+  }
+
+  .error-message {
+    color    : $error;;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+}

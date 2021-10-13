@@ -1,0 +1,104 @@
+.news-item-container {
+  padding: 2rem 0;
+  border-bottom: 1px solid #D0CFCE; }
+
+.news-item-container .news-item-image img {
+  width: 100%; }
+
+.news-item-container .news-item-content {
+  padding: 1rem 0.5rem; }
+
+.news-item-container .news-item-content .news-item-header {
+  font-size: 1.25rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: .8rem;
+  letter-spacing: 1px; }
+
+.news-item-container .news-item-content .news-item-header a {
+  color: #000; }
+
+.news-item-container .news-item-content .news-item-desc {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 1rem;
+  letter-spacing: 2px; }
+
+.news-item-container .news-item-content .news-item-author-time-container .author {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  font-weight: 200;
+  color: #000;
+  margin-bottom: 1rem;
+  letter-spacing: 2px; }
+
+.news-item-container .news-item-content .news-item-author-time-container .time {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.25;
+  font-weight: 200;
+  color: #000;
+  margin-bottom: 1rem;
+  letter-spacing: 2px; }
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  .news-item-container .news-item-content {
+    padding: 0 3rem; } }
+
+.news-navbar .news-brand-link {
+  color: #fff;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px; }
+
+.news-navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2px;
+  font-size: 0.8rem; }
+
+.search-container .form-control {
+  color: #000; }
+
+.search-container .input-group-text {
+  background: #fff;
+  box-shadow: none;
+  outline: none; }
+
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+  .search-container {
+    margin-top: 5rem;
+    width: 60%; } }
+
+.app-container {
+  margin-top: 2rem; }
+
+.app-container .load-more-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.app-container .load-more-container .load-more-button {
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  padding: 0.5rem 3rem;
+  margin: 2.5rem;
+  box-shadow: none;
+  outline: none;
+  color: #000;
+  letter-spacing: 1px; }
+
+.app-container .error-message {
+  color: #b90707;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700; }

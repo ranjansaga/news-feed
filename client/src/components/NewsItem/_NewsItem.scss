@@ -1,0 +1,72 @@
+@import '../../variables.scss';
+
+.news-item-container {
+  padding      : 2rem 0;
+  border-bottom: 1px solid $separator-color;
+
+  .news-item-image {
+    img {
+      width: 100%;
+    }
+  }
+
+  .news-item-content {
+    padding: 1rem 0.5rem;
+
+    .news-item-header {
+      font-size     : 1.25rem;
+      font-family   : $font-family;
+      font-weight   : 300;
+      line-height   : 1.5;
+      color         : $heading-text;
+      margin-bottom : .8rem;
+      letter-spacing: 1px;
+
+      a {
+        color: $heading-text;
+      }
+    }
+
+    .news-item-desc {
+      font-family   : $font-family;
+      font-size     : 0.9rem;
+      font-weight   : 300;
+      line-height   : 1.5;
+      color         : $text-color;
+      margin-bottom : 1rem;
+      letter-spacing: 2px;
+    }
+
+    .news-item-author-time-container {
+      .author {
+        font-family   : $font-family;
+        font-size     : 0.8rem;
+        line-height   : 1.5;
+        font-weight   : 200;
+        color         : $text-color;
+        margin-bottom : 1rem;
+        letter-spacing: 2px;
+      }
+
+      .time {
+        font-family   : $font-family;
+        font-size     : 0.7rem;
+        line-height   : 1.25;
+        font-weight   : 200;
+        color         : $text-color;
+        margin-bottom : 1rem;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+
+  /* styles for browsers larger than 960px; */
+  .news-item-container {
+    .news-item-content {
+      padding: 0 3rem;
+    }
+  }
+}
