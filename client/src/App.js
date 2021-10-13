@@ -7,6 +7,7 @@ import './App_Constants';
 import './App.css';
 import { appConstants } from './App_Constants';
 
+// The container component of the application
 function App() {
   const [isLoading, setLoadingFlag] = useState(false);
   const [newsList, setNewsList] = useState([]);

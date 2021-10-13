@@ -4,16 +4,16 @@
 
   .news-brand-link {
     color         : $white;
-    font-weight   : 800;
-    font-family   : $roboto;
+    font-weight   : 300;
+    font-family   : $font-family;
     letter-spacing: 2px;
   }
 
   .navbar-nav {
     .nav-link {
       color         : $white;
-      font-weight   : 600;
-      font-family   : $roboto;
+      font-weight   : 300;
+      font-family   : $font-family;
       letter-spacing: 2px;
       font-size     : 0.8rem;
     }

@@ -2,7 +2,9 @@ import React from 'react';
 import { Row } from 'react-bootstrap';
 import { Search } from 'react-bootstrap-icons';
 
+// This component represents the searchbar.
 export default function Searchbar(props) {
+  console.log('inside searchbar')
   return (
     <Row className="search-container" noGutters={true}>
       <div className="input-group input-group-lg mb-3">

@@ -1,7 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
+// This component represents each news in the news feed.
 export default function NewsItem(props) {
+  console.log('inside news item', props.item.title)
   return (
     <Row className="news-item-container" noGutters={true}>
       <Col md={3} className="news-item-image" noGutters={true}>

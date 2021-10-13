@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 
+// A wrapper component on bootstraps navbar component.
 export default function NewsNavigationBar() {
   return (
     <Navbar fixed="top" bg="dark" variant="dark" expand="lg" className="news-navbar">

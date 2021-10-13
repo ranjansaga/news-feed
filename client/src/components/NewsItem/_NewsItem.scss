@@ -15,8 +15,8 @@
 
     .news-item-header {
       font-size     : 1.25rem;
-      font-family   : $roboto;
-      font-weight   : 700;
+      font-family   : $font-family;
+      font-weight   : 300;
       line-height   : 1.5;
       color         : $heading-text;
       margin-bottom : .8rem;
@@ -28,9 +28,9 @@
     }
 
     .news-item-desc {
-      font-family   : $roboto;
+      font-family   : $font-family;
       font-size     : 0.9rem;
-      font-weight   : 700;
+      font-weight   : 300;
       line-height   : 1.5;
       color         : $text-color;
       margin-bottom : 1rem;
@@ -39,20 +39,20 @@
 
     .news-item-author-time-container {
       .author {
-        font-family   : $roboto;
+        font-family   : $font-family;
         font-size     : 0.8rem;
         line-height   : 1.5;
-        font-weight   : 700;
+        font-weight   : 200;
         color         : $text-color;
         margin-bottom : 1rem;
         letter-spacing: 2px;
       }
 
       .time {
-        font-family   : $roboto;
+        font-family   : $font-family;
         font-size     : 0.7rem;
         line-height   : 1.25;
-        font-weight   : 700;
+        font-weight   : 200;
         color         : $text-color;
         margin-bottom : 1rem;
         letter-spacing: 2px;

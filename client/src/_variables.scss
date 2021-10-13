@@ -1,3 +1,6 @@
+// All scss variables used across the app are defined here. 
+// Any changes in the color scheme can be achieved from here
+
 $black          : #000;
 $white          : #fff;
 $grey-light     :#D0CFCE;
@@ -7,7 +10,6 @@ $heading-text   : $black;
 $text-color     : $black;
 $error          : #b90707;
 
-$roboto : 'Roboto',
+$font-family: 'Poppins',
 sans-serif;
-
 $search-border-color: #008ABF;
