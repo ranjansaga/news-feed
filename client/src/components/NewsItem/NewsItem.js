@@ -2,15 +2,21 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 
 // This component represents each news in the news feed.
-export default function NewsItem(props) {
+function NewsItem(props) {
   return (
-    <Row className="news-item-container" noGutters={true}>
-      <Col md={3} className="news-item-image" noGutters={true}>
-        <img src={props.item.urlToImage} alt="" />
+    <Row className="news-item-container">
+      <Col md={3} className="news-item-image">
+        <img
+          data-testid="news-image"
+          src={props.item.urlToImage}
+          alt="news cover"
+        />
       </Col>
-      <Col md={9} className="news-item-content" noGutters={true}>
+      <Col md={9} data-testid="news-content" className="news-item-content">
         <div className="news-item-header">
-          <a href={props.item.url} rel="noreferrer" target="_blank">{props.item.title}</a>
+          <a href={props.item.url} rel="noreferrer" target="_blank">
+            {props.item.title}
+          </a>
         </div>
         <div className="news-item-desc">{props.item.description}</div>
         <div className="news-item-author-time-container">
@@ -21,3 +27,5 @@ export default function NewsItem(props) {
     </Row>
   );
 }
+
+export default React.memo(NewsItem);

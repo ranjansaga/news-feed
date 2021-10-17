@@ -30,6 +30,8 @@ function App() {
     });
   };
 
+  // This function makes an api call to the backend
+  // to get the news feed, using the query params supplied.
   const loadNews = () => {
     setLoadingFlag(true);
     const url = `/news?pageSize=${appConstants.PAGE_SIZE}&page=${page}&searchString=${searchString}`;
@@ -78,6 +80,8 @@ function App() {
       });
   };
 
+  // This function gets called when 'Load More'
+  // button is clicked.
   const getMoreItems = () => {
     increamentPage((page) => page + 1);
   };
@@ -95,22 +99,27 @@ function App() {
           getSearchResults={getSearchResults}
         />
         <NewsList newsList={newsList} />
-        {errorMessage && <p className="error-message">{errorMessage}</p>}
+        {errorMessage && (
+          <p data-testid="error-content" className="error-message">
+            {errorMessage}
+          </p>
+        )}
         <div className="load-more-container">
-          <button
-            className="load-more-button"
-            onClick={() => {
-              getMoreItems();
-            }}
-          >
-            {isLoading ? (
-              <Spinner animation="border" role="status">
-                <span className="visually-hidden"></span>
-              </Spinner>
-            ) : (
-              'Load More'
-            )}
-          </button>
+          {isLoading ? (
+            <Spinner data-testid="spinner-container" animation="border" role="status">
+              <span className="visually-hidden"></span>
+            </Spinner>
+          ) : (
+            <button
+              data-testid="load-more-button"
+              className="load-more-button"
+              onClick={() => {
+                getMoreItems();
+              }}
+            >
+              Load More
+            </button>
+          )}
         </div>
       </Container>
     </React.Fragment>

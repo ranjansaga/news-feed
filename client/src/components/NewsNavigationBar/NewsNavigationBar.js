@@ -2,9 +2,16 @@ import React from 'react';
 import { Container, Navbar, Nav } from 'react-bootstrap';
 
 // A wrapper component on bootstraps navbar component.
-export default function NewsNavigationBar() {
+function NewsNavigationBar() {
   return (
-    <Navbar fixed="top" bg="dark" variant="dark" expand="lg" className="news-navbar">
+    <Navbar
+      data-testid="nav-bar"
+      fixed="top"
+      bg="dark"
+      variant="dark"
+      expand="lg"
+      className="news-navbar"
+    >
       <Container>
         <Navbar.Brand className="news-brand-link" href="#home">
           Sagaas
@@ -27,3 +34,5 @@ export default function NewsNavigationBar() {
     </Navbar>
   );
 }
+
+export default React.memo(NewsNavigationBar);

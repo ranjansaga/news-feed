@@ -52,7 +52,7 @@ const mockData = {
       publishedAt: '2021-10-06T17:17:00Z',
       content:
         'Bitcoin, in terms of market value, rose 4.6% to $53,859.6.It passed $50,000 mark for first time in four weeks on Tuesday. Bitcoin fell below $50,000 in early September.</li>… [+821 chars]',
-    },
+    }
   ],
 };
 
